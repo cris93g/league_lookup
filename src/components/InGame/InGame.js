@@ -20,21 +20,25 @@ class InGame extends Component {
 
 	render() {
 		console.log(this.state.game);
+		const { game } = this.state;
 		return (
 			<div>
-				{this.state.game.participants ? (
-					this.state.game.participants.map(team => (
-						<div>
-							{
-								<Link to={`/account/${team.summonerName}`}>
-									<p>{`summoner name: ${team.summonerName}`}</p>
-								</Link>
-							}
-						</div>
-					))
-				) : (
-					<h1>Not in a match</h1>
-				)}
+				{game.mapId === 11 ? "Map : Summoners Rift" : ""}
+				<div key={game.gameId}>
+					{this.state.game.participants ? (
+						this.state.game.participants.map(team => (
+							<div key={team.summonerName}>
+								{
+									<Link to={`/account/${team.summonerName}`}>
+										<p>{`summoner name: ${team.summonerName}`}</p>
+									</Link>
+								}
+							</div>
+						))
+					) : (
+						<h1>Not in a match</h1>
+					)}
+				</div>
 			</div>
 		);
 	}

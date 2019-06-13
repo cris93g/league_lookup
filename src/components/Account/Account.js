@@ -19,18 +19,18 @@ class Account extends Component {
 	}
 	render() {
 		const { account } = this.state;
-
 		let displayAccount = account.map(info => {
 			console.log(info);
 			return (
-				<div key={info.summonerId}>
-					<Link to={`/ingame/${info.summonerId}`}>
-						<p>{`Summoner Name: ${info.summonerName}`}</p>
-					</Link>
+				<div key={info.leagueId}>
+					<p>{`Summoner Name: ${info.summonerName}`}</p>
 					<p>{`queue type: ${info.queueType}`}</p>
 					<p>{`tier: ${info.tier}`}</p>
 					<p>{`wins: ${info.wins}`}</p>
-					<p>{`losess: ${info.losses}`}</p>
+					<p>{`losses: ${info.losses}`}</p>
+					<Link to={`/ingame/${info.summonerId}`}>
+						<button>IN GAME</button>
+					</Link>
 				</div>
 			);
 		});

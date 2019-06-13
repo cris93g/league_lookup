@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "./Search.css";
+
 class Search extends Component {
 	constructor(props) {
 		super(props);
@@ -16,9 +18,9 @@ class Search extends Component {
 	}
 	render() {
 		const { name } = this.state;
-		console.log(name);
+
 		return (
-			<div>
+			<div className="background">
 				<input onChange={e => this.onNameHandler(e)} />
 				<Link to={`/account/${name}`}>
 					<button>submit</button>
