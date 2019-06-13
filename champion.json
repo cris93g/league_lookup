@@ -13,7 +13,7 @@
 			"info": { "attack": 8, "defense": 4, "magic": 3, "difficulty": 4 },
 			"image": {
 				"full": "Aatrox.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Aatrox_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 0,
@@ -55,7 +55,7 @@
 			"info": { "attack": 3, "defense": 4, "magic": 8, "difficulty": 5 },
 			"image": {
 				"full": "Ahri.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Ahri_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 0,
@@ -97,7 +97,7 @@
 			"info": { "attack": 5, "defense": 3, "magic": 8, "difficulty": 7 },
 			"image": {
 				"full": "Akali.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Akali_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 0,
@@ -139,7 +139,7 @@
 			"info": { "attack": 6, "defense": 9, "magic": 5, "difficulty": 7 },
 			"image": {
 				"full": "Alistar.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Alistar_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 0,
@@ -181,7 +181,7 @@
 			"info": { "attack": 2, "defense": 6, "magic": 8, "difficulty": 3 },
 			"image": {
 				"full": "Amumu.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Amumu_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 0,
@@ -223,7 +223,7 @@
 			"info": { "attack": 1, "defense": 4, "magic": 10, "difficulty": 10 },
 			"image": {
 				"full": "Anivia.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Anivia_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 0,
@@ -265,7 +265,7 @@
 			"info": { "attack": 2, "defense": 3, "magic": 10, "difficulty": 6 },
 			"image": {
 				"full": "Annie.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Annie_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 0,
@@ -307,7 +307,7 @@
 			"info": { "attack": 7, "defense": 3, "magic": 2, "difficulty": 4 },
 			"image": {
 				"full": "Ashe.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Ashe_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 0,
@@ -349,7 +349,7 @@
 			"info": { "attack": 2, "defense": 3, "magic": 8, "difficulty": 7 },
 			"image": {
 				"full": "AurelionSol.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/AurelionSol_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 0,
@@ -391,7 +391,7 @@
 			"info": { "attack": 6, "defense": 3, "magic": 8, "difficulty": 9 },
 			"image": {
 				"full": "Azir.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Azir_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 0,
@@ -433,7 +433,7 @@
 			"info": { "attack": 4, "defense": 4, "magic": 5, "difficulty": 9 },
 			"image": {
 				"full": "Bard.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Bard_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 48,
@@ -475,7 +475,7 @@
 			"info": { "attack": 4, "defense": 8, "magic": 5, "difficulty": 4 },
 			"image": {
 				"full": "Blitzcrank.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Blitzcrank_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 48,
@@ -517,7 +517,7 @@
 			"info": { "attack": 2, "defense": 2, "magic": 9, "difficulty": 4 },
 			"image": {
 				"full": "Brand.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Brand_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 48,
@@ -559,7 +559,7 @@
 			"info": { "attack": 3, "defense": 9, "magic": 4, "difficulty": 3 },
 			"image": {
 				"full": "Braum.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Braum_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 48,
@@ -601,7 +601,7 @@
 			"info": { "attack": 8, "defense": 2, "magic": 2, "difficulty": 6 },
 			"image": {
 				"full": "Caitlyn.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Caitlyn_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 48,
@@ -643,7 +643,7 @@
 			"info": { "attack": 8, "defense": 6, "magic": 3, "difficulty": 4 },
 			"image": {
 				"full": "Camille.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Camille_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 48,
@@ -685,7 +685,7 @@
 			"info": { "attack": 2, "defense": 3, "magic": 9, "difficulty": 10 },
 			"image": {
 				"full": "Cassiopeia.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Cassiopeia_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 48,
@@ -727,7 +727,7 @@
 			"info": { "attack": 3, "defense": 7, "magic": 7, "difficulty": 5 },
 			"image": {
 				"full": "Chogath.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Chogath_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 48,
@@ -769,7 +769,7 @@
 			"info": { "attack": 8, "defense": 3, "magic": 6, "difficulty": 6 },
 			"image": {
 				"full": "Corki.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Corki_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 48,
@@ -811,7 +811,7 @@
 			"info": { "attack": 9, "defense": 5, "magic": 1, "difficulty": 2 },
 			"image": {
 				"full": "Darius.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Darius_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 48,
@@ -853,7 +853,7 @@
 			"info": { "attack": 7, "defense": 6, "magic": 8, "difficulty": 4 },
 			"image": {
 				"full": "Diana.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Diana_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 96,
@@ -895,7 +895,7 @@
 			"info": { "attack": 9, "defense": 3, "magic": 1, "difficulty": 8 },
 			"image": {
 				"full": "Draven.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Draven_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 96,
@@ -937,7 +937,7 @@
 			"info": { "attack": 5, "defense": 7, "magic": 6, "difficulty": 5 },
 			"image": {
 				"full": "DrMundo.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/DrMundo_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 96,
@@ -979,7 +979,7 @@
 			"info": { "attack": 5, "defense": 3, "magic": 7, "difficulty": 8 },
 			"image": {
 				"full": "Ekko.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Ekko_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 96,
@@ -1021,7 +1021,7 @@
 			"info": { "attack": 6, "defense": 5, "magic": 7, "difficulty": 9 },
 			"image": {
 				"full": "Elise.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Elise_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 96,
@@ -1063,7 +1063,7 @@
 			"info": { "attack": 4, "defense": 2, "magic": 7, "difficulty": 10 },
 			"image": {
 				"full": "Evelynn.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Evelynn_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 96,
@@ -1105,7 +1105,7 @@
 			"info": { "attack": 7, "defense": 2, "magic": 6, "difficulty": 7 },
 			"image": {
 				"full": "Ezreal.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Ezreal_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 96,
@@ -1147,7 +1147,7 @@
 			"info": { "attack": 2, "defense": 3, "magic": 9, "difficulty": 9 },
 			"image": {
 				"full": "Fiddlesticks.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/FiddleSticks_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 96,
@@ -1189,7 +1189,7 @@
 			"info": { "attack": 10, "defense": 4, "magic": 2, "difficulty": 3 },
 			"image": {
 				"full": "Fiora.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Fiora_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 96,
@@ -1231,7 +1231,7 @@
 			"info": { "attack": 6, "defense": 4, "magic": 7, "difficulty": 6 },
 			"image": {
 				"full": "Fizz.png",
-				"sprite": "champion0.png",
+				"sprite": "./src/images/Fizz_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 96,
@@ -1273,7 +1273,7 @@
 			"info": { "attack": 1, "defense": 10, "magic": 6, "difficulty": 5 },
 			"image": {
 				"full": "Galio.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Galio_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 0,
@@ -1315,7 +1315,7 @@
 			"info": { "attack": 7, "defense": 6, "magic": 4, "difficulty": 9 },
 			"image": {
 				"full": "Gangplank.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Gangplank_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 0,
@@ -1357,7 +1357,7 @@
 			"info": { "attack": 7, "defense": 7, "magic": 1, "difficulty": 5 },
 			"image": {
 				"full": "Garen.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Garen_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 0,
@@ -1399,7 +1399,7 @@
 			"info": { "attack": 6, "defense": 5, "magic": 5, "difficulty": 8 },
 			"image": {
 				"full": "Gnar.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Gnar_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 0,
@@ -1441,7 +1441,7 @@
 			"info": { "attack": 4, "defense": 7, "magic": 6, "difficulty": 5 },
 			"image": {
 				"full": "Gragas.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Gragas_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 0,
@@ -1483,7 +1483,7 @@
 			"info": { "attack": 8, "defense": 5, "magic": 3, "difficulty": 3 },
 			"image": {
 				"full": "Graves.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Graves_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 0,
@@ -1525,7 +1525,7 @@
 			"info": { "attack": 8, "defense": 6, "magic": 4, "difficulty": 6 },
 			"image": {
 				"full": "Hecarim.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Hecarim_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 0,
@@ -1567,7 +1567,7 @@
 			"info": { "attack": 2, "defense": 6, "magic": 8, "difficulty": 8 },
 			"image": {
 				"full": "Heimerdinger.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Heimerdinger_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 0,
@@ -1609,7 +1609,7 @@
 			"info": { "attack": 8, "defense": 6, "magic": 3, "difficulty": 4 },
 			"image": {
 				"full": "Illaoi.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Illaoi_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 0,
@@ -1651,7 +1651,7 @@
 			"info": { "attack": 7, "defense": 4, "magic": 5, "difficulty": 5 },
 			"image": {
 				"full": "Irelia.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Irelia_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 0,
@@ -1693,7 +1693,7 @@
 			"info": { "attack": 3, "defense": 5, "magic": 7, "difficulty": 7 },
 			"image": {
 				"full": "Ivern.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Ivern_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 48,
@@ -1735,7 +1735,7 @@
 			"info": { "attack": 3, "defense": 5, "magic": 7, "difficulty": 7 },
 			"image": {
 				"full": "Janna.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Janna_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 48,
@@ -1777,7 +1777,7 @@
 			"info": { "attack": 6, "defense": 8, "magic": 3, "difficulty": 5 },
 			"image": {
 				"full": "JarvanIV.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/JarvanIV_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 48,
@@ -1819,7 +1819,7 @@
 			"info": { "attack": 7, "defense": 5, "magic": 7, "difficulty": 5 },
 			"image": {
 				"full": "Jax.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Jax_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 48,
@@ -1861,7 +1861,7 @@
 			"info": { "attack": 8, "defense": 4, "magic": 3, "difficulty": 7 },
 			"image": {
 				"full": "Jayce.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Jayce_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 48,
@@ -1903,7 +1903,7 @@
 			"info": { "attack": 10, "defense": 2, "magic": 6, "difficulty": 6 },
 			"image": {
 				"full": "Jhin.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Jhin_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 48,
@@ -1945,7 +1945,7 @@
 			"info": { "attack": 9, "defense": 2, "magic": 4, "difficulty": 6 },
 			"image": {
 				"full": "Jinx.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Jinx_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 48,
@@ -1987,7 +1987,7 @@
 			"info": { "attack": 8, "defense": 5, "magic": 3, "difficulty": 6 },
 			"image": {
 				"full": "Kaisa.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Kaisa_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 48,
@@ -2029,7 +2029,7 @@
 			"info": { "attack": 8, "defense": 2, "magic": 4, "difficulty": 7 },
 			"image": {
 				"full": "Kalista.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Kalista_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 48,
@@ -2071,7 +2071,7 @@
 			"info": { "attack": 1, "defense": 7, "magic": 8, "difficulty": 5 },
 			"image": {
 				"full": "Karma.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Karma_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 48,
@@ -2113,7 +2113,7 @@
 			"info": { "attack": 2, "defense": 2, "magic": 10, "difficulty": 7 },
 			"image": {
 				"full": "Karthus.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Karthus_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 96,
@@ -2155,7 +2155,7 @@
 			"info": { "attack": 3, "defense": 5, "magic": 8, "difficulty": 8 },
 			"image": {
 				"full": "Kassadin.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Kassadin_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 96,
@@ -2197,7 +2197,7 @@
 			"info": { "attack": 4, "defense": 3, "magic": 9, "difficulty": 8 },
 			"image": {
 				"full": "Katarina.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Katarina_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 96,
@@ -2239,7 +2239,7 @@
 			"info": { "attack": 6, "defense": 6, "magic": 7, "difficulty": 7 },
 			"image": {
 				"full": "Kayle.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Kayle_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 96,
@@ -2281,7 +2281,7 @@
 			"info": { "attack": 10, "defense": 6, "magic": 1, "difficulty": 8 },
 			"image": {
 				"full": "Kayn.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Kayn_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 96,
@@ -2323,7 +2323,7 @@
 			"info": { "attack": 6, "defense": 4, "magic": 7, "difficulty": 4 },
 			"image": {
 				"full": "Kennen.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Kennen_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 96,
@@ -2365,7 +2365,7 @@
 			"info": { "attack": 9, "defense": 4, "magic": 3, "difficulty": 6 },
 			"image": {
 				"full": "Khazix.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Khazix_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 96,
@@ -2407,7 +2407,7 @@
 			"info": { "attack": 8, "defense": 2, "magic": 2, "difficulty": 4 },
 			"image": {
 				"full": "Kindred.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Kindred_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 96,
@@ -2449,7 +2449,7 @@
 			"info": { "attack": 8, "defense": 2, "magic": 2, "difficulty": 7 },
 			"image": {
 				"full": "Kled.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/Kled_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 96,
@@ -2491,7 +2491,7 @@
 			"info": { "attack": 8, "defense": 2, "magic": 5, "difficulty": 6 },
 			"image": {
 				"full": "KogMaw.png",
-				"sprite": "champion1.png",
+				"sprite": "./src/images/KogMaw_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 96,
@@ -2533,7 +2533,7 @@
 			"info": { "attack": 1, "defense": 4, "magic": 10, "difficulty": 9 },
 			"image": {
 				"full": "Leblanc.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Leblanc_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 0,
@@ -2575,7 +2575,7 @@
 			"info": { "attack": 8, "defense": 5, "magic": 3, "difficulty": 6 },
 			"image": {
 				"full": "LeeSin.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/LeeSin_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 0,
@@ -2617,7 +2617,7 @@
 			"info": { "attack": 4, "defense": 8, "magic": 3, "difficulty": 4 },
 			"image": {
 				"full": "Leona.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Leona_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 0,
@@ -2659,7 +2659,7 @@
 			"info": { "attack": 2, "defense": 5, "magic": 8, "difficulty": 6 },
 			"image": {
 				"full": "Lissandra.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Lissandra_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 0,
@@ -2701,7 +2701,7 @@
 			"info": { "attack": 8, "defense": 5, "magic": 3, "difficulty": 6 },
 			"image": {
 				"full": "Lucian.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Lucian_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 0,
@@ -2743,7 +2743,7 @@
 			"info": { "attack": 4, "defense": 5, "magic": 7, "difficulty": 5 },
 			"image": {
 				"full": "Lulu.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Lulu_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 0,
@@ -2785,7 +2785,7 @@
 			"info": { "attack": 2, "defense": 4, "magic": 9, "difficulty": 5 },
 			"image": {
 				"full": "Lux.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Lux_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 0,
@@ -2827,7 +2827,7 @@
 			"info": { "attack": 5, "defense": 9, "magic": 7, "difficulty": 2 },
 			"image": {
 				"full": "Malphite.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Malphite_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 0,
@@ -2869,7 +2869,7 @@
 			"info": { "attack": 2, "defense": 2, "magic": 9, "difficulty": 6 },
 			"image": {
 				"full": "Malzahar.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Malzahar_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 0,
@@ -2911,7 +2911,7 @@
 			"info": { "attack": 3, "defense": 8, "magic": 6, "difficulty": 3 },
 			"image": {
 				"full": "Maokai.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Maokai_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 0,
@@ -2953,7 +2953,7 @@
 			"info": { "attack": 10, "defense": 4, "magic": 2, "difficulty": 4 },
 			"image": {
 				"full": "MasterYi.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/MasterYi_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 48,
@@ -2995,7 +2995,7 @@
 			"info": { "attack": 8, "defense": 2, "magic": 5, "difficulty": 1 },
 			"image": {
 				"full": "MissFortune.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/MissFortune_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 48,
@@ -3037,7 +3037,7 @@
 			"info": { "attack": 8, "defense": 5, "magic": 2, "difficulty": 3 },
 			"image": {
 				"full": "MonkeyKing.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/MonkeyKing_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 48,
@@ -3079,7 +3079,7 @@
 			"info": { "attack": 4, "defense": 6, "magic": 7, "difficulty": 4 },
 			"image": {
 				"full": "Mordekaiser.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Mordekaiser_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 48,
@@ -3121,7 +3121,7 @@
 			"info": { "attack": 1, "defense": 6, "magic": 8, "difficulty": 1 },
 			"image": {
 				"full": "Morgana.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Morgana_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 48,
@@ -3163,7 +3163,7 @@
 			"info": { "attack": 4, "defense": 3, "magic": 7, "difficulty": 5 },
 			"image": {
 				"full": "Nami.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Nami_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 48,
@@ -3205,7 +3205,7 @@
 			"info": { "attack": 7, "defense": 5, "magic": 6, "difficulty": 6 },
 			"image": {
 				"full": "Nasus.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Nasus_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 48,
@@ -3247,7 +3247,7 @@
 			"info": { "attack": 4, "defense": 6, "magic": 6, "difficulty": 6 },
 			"image": {
 				"full": "Nautilus.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Nautilus_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 48,
@@ -3289,7 +3289,7 @@
 			"info": { "attack": 1, "defense": 1, "magic": 9, "difficulty": 5 },
 			"image": {
 				"full": "Neeko.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Neeko_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 48,
@@ -3331,7 +3331,7 @@
 			"info": { "attack": 5, "defense": 4, "magic": 7, "difficulty": 8 },
 			"image": {
 				"full": "Nidalee.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Nidalee_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 48,
@@ -3373,7 +3373,7 @@
 			"info": { "attack": 9, "defense": 5, "magic": 2, "difficulty": 4 },
 			"image": {
 				"full": "Nocturne.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Nocturne_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 96,
@@ -3415,7 +3415,7 @@
 			"info": { "attack": 4, "defense": 6, "magic": 7, "difficulty": 4 },
 			"image": {
 				"full": "Nunu.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Nunu_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 96,
@@ -3457,7 +3457,7 @@
 			"info": { "attack": 9, "defense": 5, "magic": 3, "difficulty": 3 },
 			"image": {
 				"full": "Olaf.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Olaf_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 96,
@@ -3499,7 +3499,7 @@
 			"info": { "attack": 4, "defense": 3, "magic": 9, "difficulty": 7 },
 			"image": {
 				"full": "Orianna.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Orianna_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 96,
@@ -3541,7 +3541,7 @@
 			"info": { "attack": 5, "defense": 9, "magic": 3, "difficulty": 5 },
 			"image": {
 				"full": "Ornn.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Ornn_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 96,
@@ -3583,7 +3583,7 @@
 			"info": { "attack": 9, "defense": 4, "magic": 3, "difficulty": 4 },
 			"image": {
 				"full": "Pantheon.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Pantheon_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 96,
@@ -3625,7 +3625,7 @@
 			"info": { "attack": 6, "defense": 7, "magic": 2, "difficulty": 6 },
 			"image": {
 				"full": "Poppy.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Poppy_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 96,
@@ -3667,7 +3667,7 @@
 			"info": { "attack": 9, "defense": 3, "magic": 1, "difficulty": 7 },
 			"image": {
 				"full": "Pyke.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Pyke_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 96,
@@ -3709,7 +3709,7 @@
 			"info": { "attack": 9, "defense": 4, "magic": 2, "difficulty": 5 },
 			"image": {
 				"full": "Quinn.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Quinn_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 96,
@@ -3751,7 +3751,7 @@
 			"info": { "attack": 2, "defense": 4, "magic": 8, "difficulty": 5 },
 			"image": {
 				"full": "Rakan.png",
-				"sprite": "champion2.png",
+				"sprite": "./src/images/Rakan_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 96,
@@ -3793,7 +3793,7 @@
 			"info": { "attack": 4, "defense": 10, "magic": 5, "difficulty": 5 },
 			"image": {
 				"full": "Rammus.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Rammus_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 0,
@@ -3835,7 +3835,7 @@
 			"info": { "attack": 8, "defense": 5, "magic": 2, "difficulty": 3 },
 			"image": {
 				"full": "RekSai.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/RekSai_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 0,
@@ -3877,7 +3877,7 @@
 			"info": { "attack": 8, "defense": 5, "magic": 2, "difficulty": 3 },
 			"image": {
 				"full": "Renekton.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Renekton_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 0,
@@ -3919,7 +3919,7 @@
 			"info": { "attack": 7, "defense": 4, "magic": 2, "difficulty": 8 },
 			"image": {
 				"full": "Rengar.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Rengar_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 0,
@@ -3961,7 +3961,7 @@
 			"info": { "attack": 8, "defense": 5, "magic": 1, "difficulty": 8 },
 			"image": {
 				"full": "Riven.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Riven_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 0,
@@ -4003,7 +4003,7 @@
 			"info": { "attack": 3, "defense": 6, "magic": 8, "difficulty": 10 },
 			"image": {
 				"full": "Rumble.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Rumble_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 0,
@@ -4045,7 +4045,7 @@
 			"info": { "attack": 2, "defense": 2, "magic": 10, "difficulty": 7 },
 			"image": {
 				"full": "Ryze.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Ryze_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 0,
@@ -4087,7 +4087,7 @@
 			"info": { "attack": 5, "defense": 7, "magic": 6, "difficulty": 4 },
 			"image": {
 				"full": "Sejuani.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Sejuani_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 0,
@@ -4129,7 +4129,7 @@
 			"info": { "attack": 8, "defense": 4, "magic": 6, "difficulty": 9 },
 			"image": {
 				"full": "Shaco.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Shaco_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 0,
@@ -4171,7 +4171,7 @@
 			"info": { "attack": 3, "defense": 9, "magic": 3, "difficulty": 4 },
 			"image": {
 				"full": "Shen.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Shen_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 0,
@@ -4213,7 +4213,7 @@
 			"info": { "attack": 8, "defense": 6, "magic": 3, "difficulty": 4 },
 			"image": {
 				"full": "Shyvana.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Shyvana_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 48,
@@ -4255,7 +4255,7 @@
 			"info": { "attack": 4, "defense": 8, "magic": 7, "difficulty": 5 },
 			"image": {
 				"full": "Singed.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Singed_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 48,
@@ -4297,7 +4297,7 @@
 			"info": { "attack": 5, "defense": 9, "magic": 3, "difficulty": 5 },
 			"image": {
 				"full": "Sion.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Sion_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 48,
@@ -4339,7 +4339,7 @@
 			"info": { "attack": 9, "defense": 3, "magic": 1, "difficulty": 4 },
 			"image": {
 				"full": "Sivir.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Sivir_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 48,
@@ -4381,7 +4381,7 @@
 			"info": { "attack": 7, "defense": 6, "magic": 5, "difficulty": 5 },
 			"image": {
 				"full": "Skarner.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Skarner_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 48,
@@ -4423,7 +4423,7 @@
 			"info": { "attack": 5, "defense": 2, "magic": 8, "difficulty": 4 },
 			"image": {
 				"full": "Sona.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Sona_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 48,
@@ -4465,7 +4465,7 @@
 			"info": { "attack": 2, "defense": 5, "magic": 7, "difficulty": 3 },
 			"image": {
 				"full": "Soraka.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Soraka_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 48,
@@ -4507,7 +4507,7 @@
 			"info": { "attack": 2, "defense": 6, "magic": 9, "difficulty": 8 },
 			"image": {
 				"full": "Swain.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Swain_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 48,
@@ -4549,7 +4549,7 @@
 			"info": { "attack": 3, "defense": 4, "magic": 8, "difficulty": 5 },
 			"image": {
 				"full": "Sylas.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Sylas_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 48,
@@ -4591,7 +4591,7 @@
 			"info": { "attack": 2, "defense": 3, "magic": 9, "difficulty": 8 },
 			"image": {
 				"full": "Syndra.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Syndra_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 48,
@@ -4633,7 +4633,7 @@
 			"info": { "attack": 3, "defense": 9, "magic": 6, "difficulty": 5 },
 			"image": {
 				"full": "TahmKench.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/TahmKench_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 96,
@@ -4675,7 +4675,7 @@
 			"info": { "attack": 1, "defense": 7, "magic": 8, "difficulty": 5 },
 			"image": {
 				"full": "Taliyah.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Taliyah_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 96,
@@ -4717,7 +4717,7 @@
 			"info": { "attack": 9, "defense": 3, "magic": 1, "difficulty": 7 },
 			"image": {
 				"full": "Talon.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Talon_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 96,
@@ -4759,7 +4759,7 @@
 			"info": { "attack": 4, "defense": 8, "magic": 5, "difficulty": 3 },
 			"image": {
 				"full": "Taric.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Taric_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 96,
@@ -4801,7 +4801,7 @@
 			"info": { "attack": 5, "defense": 3, "magic": 7, "difficulty": 6 },
 			"image": {
 				"full": "Teemo.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Teemo_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 96,
@@ -4843,7 +4843,7 @@
 			"info": { "attack": 5, "defense": 6, "magic": 6, "difficulty": 7 },
 			"image": {
 				"full": "Thresh.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Thresh_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 96,
@@ -4885,7 +4885,7 @@
 			"info": { "attack": 9, "defense": 3, "magic": 5, "difficulty": 4 },
 			"image": {
 				"full": "Tristana.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Tristana_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 96,
@@ -4927,7 +4927,7 @@
 			"info": { "attack": 7, "defense": 6, "magic": 2, "difficulty": 5 },
 			"image": {
 				"full": "Trundle.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Trundle_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 96,
@@ -4969,7 +4969,7 @@
 			"info": { "attack": 10, "defense": 5, "magic": 2, "difficulty": 5 },
 			"image": {
 				"full": "Tryndamere.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/Tryndamere_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 96,
@@ -5011,7 +5011,7 @@
 			"info": { "attack": 6, "defense": 2, "magic": 6, "difficulty": 9 },
 			"image": {
 				"full": "TwistedFate.png",
-				"sprite": "champion3.png",
+				"sprite": "./src/images/TwistedFate_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 96,
@@ -5053,7 +5053,7 @@
 			"info": { "attack": 9, "defense": 2, "magic": 3, "difficulty": 6 },
 			"image": {
 				"full": "Twitch.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Twitch_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 0,
@@ -5095,7 +5095,7 @@
 			"info": { "attack": 8, "defense": 7, "magic": 4, "difficulty": 7 },
 			"image": {
 				"full": "Udyr.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Udyr_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 0,
@@ -5137,7 +5137,7 @@
 			"info": { "attack": 8, "defense": 5, "magic": 3, "difficulty": 8 },
 			"image": {
 				"full": "Urgot.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Urgot_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 0,
@@ -5179,7 +5179,7 @@
 			"info": { "attack": 7, "defense": 3, "magic": 4, "difficulty": 2 },
 			"image": {
 				"full": "Varus.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Varus_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 0,
@@ -5221,7 +5221,7 @@
 			"info": { "attack": 10, "defense": 1, "magic": 1, "difficulty": 8 },
 			"image": {
 				"full": "Vayne.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Vayne_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 0,
@@ -5263,7 +5263,7 @@
 			"info": { "attack": 2, "defense": 2, "magic": 10, "difficulty": 7 },
 			"image": {
 				"full": "Veigar.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Veigar_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 0,
@@ -5305,7 +5305,7 @@
 			"info": { "attack": 2, "defense": 2, "magic": 10, "difficulty": 8 },
 			"image": {
 				"full": "Velkoz.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Velkoz_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 0,
@@ -5347,7 +5347,7 @@
 			"info": { "attack": 8, "defense": 5, "magic": 3, "difficulty": 4 },
 			"image": {
 				"full": "Vi.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Vi_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 0,
@@ -5389,7 +5389,7 @@
 			"info": { "attack": 2, "defense": 4, "magic": 10, "difficulty": 9 },
 			"image": {
 				"full": "Viktor.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Viktor_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 0,
@@ -5431,7 +5431,7 @@
 			"info": { "attack": 2, "defense": 6, "magic": 8, "difficulty": 7 },
 			"image": {
 				"full": "Vladimir.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Vladimir_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 0,
@@ -5473,7 +5473,7 @@
 			"info": { "attack": 7, "defense": 7, "magic": 4, "difficulty": 3 },
 			"image": {
 				"full": "Volibear.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Volibear_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 48,
@@ -5515,7 +5515,7 @@
 			"info": { "attack": 9, "defense": 5, "magic": 3, "difficulty": 3 },
 			"image": {
 				"full": "Warwick.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Warwick_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 48,
@@ -5557,7 +5557,7 @@
 			"info": { "attack": 10, "defense": 6, "magic": 1, "difficulty": 5 },
 			"image": {
 				"full": "Xayah.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Xayah_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 48,
@@ -5599,7 +5599,7 @@
 			"info": { "attack": 1, "defense": 3, "magic": 10, "difficulty": 8 },
 			"image": {
 				"full": "Xerath.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Xerath_0.jpg",
 				"group": "champion",
 				"x": 144,
 				"y": 48,
@@ -5641,7 +5641,7 @@
 			"info": { "attack": 8, "defense": 6, "magic": 3, "difficulty": 2 },
 			"image": {
 				"full": "XinZhao.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/XinZhao_0.jpg",
 				"group": "champion",
 				"x": 192,
 				"y": 48,
@@ -5683,7 +5683,7 @@
 			"info": { "attack": 8, "defense": 4, "magic": 4, "difficulty": 10 },
 			"image": {
 				"full": "Yasuo.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Yasuo_0.jpg",
 				"group": "champion",
 				"x": 240,
 				"y": 48,
@@ -5725,7 +5725,7 @@
 			"info": { "attack": 6, "defense": 6, "magic": 4, "difficulty": 6 },
 			"image": {
 				"full": "Yorick.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Yorick_0.jpg",
 				"group": "champion",
 				"x": 288,
 				"y": 48,
@@ -5767,7 +5767,7 @@
 			"info": { "attack": 3, "defense": 7, "magic": 7, "difficulty": 8 },
 			"image": {
 				"full": "Zac.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Zac_0.jpg",
 				"group": "champion",
 				"x": 336,
 				"y": 48,
@@ -5809,7 +5809,7 @@
 			"info": { "attack": 9, "defense": 2, "magic": 1, "difficulty": 7 },
 			"image": {
 				"full": "Zed.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Zed_0.jpg",
 				"group": "champion",
 				"x": 384,
 				"y": 48,
@@ -5851,7 +5851,7 @@
 			"info": { "attack": 2, "defense": 4, "magic": 9, "difficulty": 4 },
 			"image": {
 				"full": "Ziggs.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Ziggs_0.jpg",
 				"group": "champion",
 				"x": 432,
 				"y": 48,
@@ -5893,7 +5893,7 @@
 			"info": { "attack": 2, "defense": 5, "magic": 8, "difficulty": 6 },
 			"image": {
 				"full": "Zilean.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Zilean_0.jpg",
 				"group": "champion",
 				"x": 0,
 				"y": 96,
@@ -5935,7 +5935,7 @@
 			"info": { "attack": 1, "defense": 7, "magic": 8, "difficulty": 5 },
 			"image": {
 				"full": "Zoe.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Zoe_0.jpg",
 				"group": "champion",
 				"x": 48,
 				"y": 96,
@@ -5977,7 +5977,7 @@
 			"info": { "attack": 4, "defense": 3, "magic": 8, "difficulty": 7 },
 			"image": {
 				"full": "Zyra.png",
-				"sprite": "champion4.png",
+				"sprite": "./src/images/Zyra_0.jpg",
 				"group": "champion",
 				"x": 96,
 				"y": 96,
