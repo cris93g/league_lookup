@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import champion from "../../champion";
 class InGame extends Component {
 	constructor(props) {
 		super(props);
@@ -19,7 +20,9 @@ class InGame extends Component {
 	}
 
 	render() {
+		console.log(Object.values(champion.data));
 		console.log(this.state.game);
+
 		const { game } = this.state;
 		return (
 			<div>
@@ -28,6 +31,7 @@ class InGame extends Component {
 					{this.state.game.participants ? (
 						this.state.game.participants.map(team => (
 							<div key={team.summonerName}>
+								{/* <img src={team.championId==champion.data.id } */}
 								{
 									<Link to={`/account/${team.summonerName}`}>
 										<p>{`summoner name: ${team.summonerName}`}</p>
