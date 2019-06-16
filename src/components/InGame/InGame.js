@@ -33,23 +33,32 @@ class InGame extends Component {
 					{this.state.game.participants ? (
 						this.state.game.participants.map(team => (
 							<div key={team.summonerName}>
+								<img
+									className="iconpic"
+									src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/profileicon/${
+										team.profileIconId
+									}.png`}
+								/>
+
 								{
 									<Link to={`/account/${team.summonerName}`}>
 										<p>{`summoner name: ${team.summonerName}`}</p>
 									</Link>
 								}
+
 								{champs.map(champ => {
 									if (champ.key == team.championId) {
 										return (
 											<img
 												className="iconpic"
-												src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/${
+												src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
 													champ.id
 												}.png`}
 											/>
 										);
 									}
 								})}
+								<hr />
 							</div>
 						))
 					) : (

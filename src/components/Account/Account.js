@@ -6,8 +6,10 @@ class Account extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			account: []
+			account: [],
+			picture: []
 		};
+		// this.getpic = this.getpic.bind(this);
 	}
 	componentDidMount() {
 		axios
@@ -17,20 +19,30 @@ class Account extends Component {
 			.then(response => {
 				this.setState({ account: response.data });
 			});
+
+		axios
+			.post(`/api/picture	`, {
+				name: this.props.match.params.name
+			})
+			.then(response => {
+				this.setState({ picture: response.data });
+			});
 	}
+
 	render() {
+		console.log(this.state.picture);
 		const { account } = this.state;
 		let displayAccount = account.map(info => {
 			console.log(info);
 			return (
 				<div key={info.leagueId}>
 					<Wrapper>
-						{/* <img
+						<img
 							className="iconpic"
-							src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/profileicon/${
-								info.summonerName
+							src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/profileicon/${
+								this.state.picture.profileIconId
 							}.png`}
-						/> */}
+						/>
 						<p>{`Summoner Name: ${info.summonerName}`}</p>
 						<p>{`queue type: ${info.queueType}`}</p>
 						<p>{`tier: ${info.tier}`}</p>
@@ -38,6 +50,9 @@ class Account extends Component {
 						<p>{`losses: ${info.losses}`}</p>
 						<Link to={`/ingame/${info.summonerId}`}>
 							<button>IN GAME</button>
+						</Link>
+						<Link to={`/matchHistory/${this.state.picture.accountId}`}>
+							<button>Match History</button>
 						</Link>
 					</Wrapper>
 				</div>

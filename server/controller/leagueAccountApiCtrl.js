@@ -18,6 +18,17 @@ let getSummonerAccount = async (req, res) => {
 		res.status(200).json(info);
 	}
 };
+
+let getSummonerPicture = async (req, res) => {
+	let { name } = req.body;
+	let results = await axios.get(
+		`https://na1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${name}?api_key=${API}`
+	);
+	const info = results.data;
+	if (info) {
+		res.status(200).json(info);
+	}
+};
 /* view account info */
 let getSummonerInfo = async (req, res) => {
 	const { id } = req.body;
@@ -46,9 +57,35 @@ let getCurrentMatch = async (req, res) => {
 let getMatchHistory = async (req, res) => {
 	const { accountId } = req.body;
 	const results = await axios.get(
-		`https://na1.api.riotgames.com/lol/match/v4/matchlists/by-account/${accountId}?api_key=${API}`
+		`https://na1.api.riotgames.com/lol/match/v4/matchlists/by-account/${accountId}?api_key=${API}&endIndex=25`
 	);
 	const info = results.data;
+	if (info) {
+		res.status(200).json(info);
+	}
+};
+
+let getSpecificMatch = async (req, res) => {
+	const { matchId } = req.body;
+	const results = await axios.get(
+		`https://na1.api.riotgames.com/lol/match/v4/matches/${matchId}?api_key=${API}`
+	);
+	const info = results.data;
+	if (info) {
+		res.status(200).json(info);
+	}
+};
+
+let getAllHistory = async (req, res) => {
+	// const { accountId } = req.body;
+	const results = await axios.get(
+		`https://na1.api.riotgames.com/lol/match/v4/matchlists/by-account/mqTho7oMTYtM70XO0Rb6uvTRvIL-zf9-IKcN75BWck9MS1k?api_key=${API}&endIndex=25`
+	);
+	let matchId = results.data.matches.gameId;
+	let res2 = await axios.get(
+		`https://na1.api.riotgames.com/lol/match/v4/matches/${matchId}?api_key=${API}`
+	);
+	let info = res2.data;
 	if (info) {
 		res.status(200).json(info);
 	}
@@ -69,5 +106,8 @@ module.exports = {
 	getCurrentMatch,
 	getMatchHistory,
 	getLeagueStatus,
-	getSummonerInfo
+	getSummonerInfo,
+	getSummonerPicture,
+	getSpecificMatch,
+	getAllHistory
 };
