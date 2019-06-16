@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import champion from "../../champion";
+import "./inGame.css";
 class InGame extends Component {
 	constructor(props) {
 		super(props);
@@ -20,10 +21,11 @@ class InGame extends Component {
 	}
 
 	render() {
-		console.log(Object.values(champion.data));
-		console.log(this.state.game);
-
 		const { game } = this.state;
+
+		let champs = Object.values(champion.data);
+		console.log(champs);
+		console.log(game);
 		return (
 			<div>
 				{game.mapId === 11 ? "Map : Summoners Rift" : ""}
@@ -31,12 +33,23 @@ class InGame extends Component {
 					{this.state.game.participants ? (
 						this.state.game.participants.map(team => (
 							<div key={team.summonerName}>
-								{/* <img src={team.championId==champion.data.id } */}
 								{
 									<Link to={`/account/${team.summonerName}`}>
 										<p>{`summoner name: ${team.summonerName}`}</p>
 									</Link>
 								}
+								{champs.map(champ => {
+									if (champ.key == team.championId) {
+										return (
+											<img
+												className="iconpic"
+												src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion/${
+													champ.id
+												}.png`}
+											/>
+										);
+									}
+								})}
 							</div>
 						))
 					) : (

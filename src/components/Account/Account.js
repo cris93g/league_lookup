@@ -25,6 +25,12 @@ class Account extends Component {
 			return (
 				<div key={info.leagueId}>
 					<Wrapper>
+						{/* <img
+							className="iconpic"
+							src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/profileicon/${
+								info.summonerName
+							}.png`}
+						/> */}
 						<p>{`Summoner Name: ${info.summonerName}`}</p>
 						<p>{`queue type: ${info.queueType}`}</p>
 						<p>{`tier: ${info.tier}`}</p>
