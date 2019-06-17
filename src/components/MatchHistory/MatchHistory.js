@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import champion from "../../champion";
+import { Link } from "react-router-dom";
 class MatchHistory extends Component {
 	constructor(props) {
 		super(props);
@@ -46,12 +47,14 @@ class MatchHistory extends Component {
 								{champs.map(champ => {
 									if (champ.key == match.champion) {
 										return (
-											<img
-												className="iconpic"
-												src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
-													champ.id
-												}.png`}
-											/>
+											<Link to={`/match/${match.gameId}`}>
+												<img
+													className="iconpic"
+													src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
+														champ.id
+													}.png`}
+												/>
+											</Link>
 										);
 									}
 								})}
