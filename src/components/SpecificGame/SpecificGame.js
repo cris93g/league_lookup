@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 class SpecificGame extends Component {
   constructor(props) {
@@ -27,13 +28,15 @@ class SpecificGame extends Component {
         <div>
           {game.participantIdentities ? (
             game.participantIdentities.map(participant => (
-              <p>{participant.player.summonerName}</p>
-              //   <img
-              // 						className="iconpic"
-              // 						src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/profileicon/${
-              // 							participant.player.profileIconId
-              // 						}.png`}
-              // 					/>
+              <div>
+               <Link to={`/account/${participant.player.summonerName}`}> <p>{participant.player.summonerName}</p></Link>
+                <img
+                  className="iconpic"
+                  src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/profileicon/${
+                    participant.player.profileIcon
+                  }.png`}
+                />
+              </div>
             ))
           ) : (
             <h1>not any matches</h1>
