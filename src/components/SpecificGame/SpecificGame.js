@@ -86,7 +86,8 @@ class SpecificGame extends Component {
 					{groupOne
 						? groupOne.map(team => (
 								<div>
-									<p>{team.player.summonerName}</p>
+									<Link to={`/account/${team.player.summonerName}`}>
+									<p>{team.player.summonerName}</p></Link>
 									<img
 										className="iconpic"
 										src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/profileicon/${
@@ -161,7 +162,8 @@ class SpecificGame extends Component {
 					{groupOne
 						? groupTwo.map(team => (
 								<div>
-									<p>{team.player.summonerName}</p>
+									<Link to={`/account/${team.player.summonerName}`}>
+									<p>{team.player.summonerName}</p></Link>
 									<img
 										className="iconpic"
 										src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/profileicon/${
