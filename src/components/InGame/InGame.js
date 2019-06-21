@@ -5,11 +5,13 @@ import champion from "../../champion";
 import "./inGame.css";
 import spells from "../../spells";
 import styled from "styled-components";
+import perks from "../../perks";
 class InGame extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			game: []
+			game: [],
+			account: []
 		};
 	}
 	componentDidMount() {
@@ -19,6 +21,14 @@ class InGame extends Component {
 			})
 			.then(response => {
 				this.setState({ game: response.data });
+			});
+
+		axios
+			.post(`/api/account`, {
+				name: this.props.match.params.name
+			})
+			.then(response => {
+				this.setState({ account: response.data });
 			});
 	}
 
@@ -84,6 +94,32 @@ class InGame extends Component {
 										);
 									}
 								})}
+
+								{perks.map(perk => {
+									if (perk.id == team.perks.perkStyle) {
+										return (
+											<img
+												className="iconpic"
+												src={`http://ddragonexplorer.com/cdn/img/${perk.icon}`}
+											/>
+										);
+									}
+								})}
+								{perks.map(perk => {
+									if (perk.id == team.perks.perkSubStyle) {
+										return (
+											<div>
+												<img
+													className="iconpic"
+													src={`http://ddragonexplorer.com/cdn/img/${
+														perk.icon
+													}`}
+												/>
+											</div>
+										);
+									}
+								})}
+
 								{spell.map(spel => {
 									if (spel.key == team.spell1Id) {
 										return (
