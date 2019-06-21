@@ -29,22 +29,97 @@ class InGame extends Component {
 		let spell = Object.values(spells.data);
 		console.log(champs);
 		console.log(game);
+		let group1 = [];
+		let group2 = [];
+
+		function firstGroup() {
+			if (game.participants) {
+				group1 = game.participants.filter(function(entry) {
+					return entry.teamId == 100;
+				});
+			}
+		}
+		function secondGroup() {
+			if (game.participants) {
+				group2 = game.participants.filter(function(entry) {
+					return entry.teamId == 200;
+				});
+			}
+		}
+
+		firstGroup();
+		secondGroup();
+		console.log(group1);
+		console.log(group2);
 		return (
 			<div>
 				{/* <Wrapper> */}
 				{/* {game.mapId === 11 ? "Map : Summoners Rift" : ""} */}
-				<div key={game.gameId}>
-					{this.state.game.participants ? (
-						this.state.game.participants.map(team => (
+				<div key={group1.summonerName}>
+					<h2>BLUE TEAM</h2>
+					{group1 ? (
+						group1.map(team => (
 							<div key={team.summonerName}>
-								{team.teamId == 100 ? "blue Team" : "red team"}
-								{team.teamId == 200 &&
-								this.state.game.participants.length === 4 ? (
-									<hr />
-								) : (
-									""
-								)}
-								{console.log(this.state.game.participants.length)}
+								{
+									<Link to={`/account/${team.summonerName}`}>
+										<p>{`summoner name: ${team.summonerName}`}</p>
+									</Link>
+								}
+								<img
+									className="iconpic"
+									src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/profileicon/${
+										team.profileIconId
+									}.png`}
+								/>
+
+								{champs.map(champ => {
+									if (champ.key == team.championId) {
+										return (
+											<img
+												className="iconpic"
+												src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
+													champ.id
+												}.png`}
+											/>
+										);
+									}
+								})}
+								{spell.map(spel => {
+									if (spel.key == team.spell1Id) {
+										return (
+											<img
+												className="iconpic"
+												src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+													spel.id
+												}.png`}
+											/>
+										);
+									}
+								})}
+								{spell.map(spel => {
+									if (spel.key == team.spell2Id) {
+										return (
+											<img
+												className="iconpic"
+												src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+													spel.id
+												}.png`}
+											/>
+										);
+									}
+								})}
+							</div>
+						))
+					) : (
+						<h1>Not in a match</h1>
+					)}
+				</div>
+				<hr />
+				<h2>RED TEAM</h2>
+				<div key={group2.summonerName}>
+					{group2 ? (
+						group2.map(team => (
+							<div key={team.summonerName}>
 								{
 									<Link to={`/account/${team.summonerName}`}>
 										<p>{`summoner name: ${team.summonerName}`}</p>
