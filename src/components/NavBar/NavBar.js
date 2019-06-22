@@ -1,51 +1,46 @@
 import React, { Component } from "react";
 import "./NavBar.css";
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 class NavBar extends Component {
 	render() {
 		return (
-			<div className="nav">
-				<Navbar inverse collapseOnSelect>
-					<Navbar.Header>
-						<Navbar.Brand>
-							<a href="#brand">React-Bootstrap</a>
-						</Navbar.Brand>
-						<Navbar.Toggle />
-					</Navbar.Header>
-					<Navbar.Collapse>
+			<div>
+				<Wrapper>
+					<div>
 						<Nav>
-							<NavItem eventKey={1} href="#">
-								Link
-							</NavItem>
-							<NavItem eventKey={2} href="#">
-								Link
-							</NavItem>
-							<NavDropdown
-								eventKey={3}
-								title="Dropdown"
-								id="basic-nav-dropdown"
-							>
-								{/* <MenuItem eventKey={3.1}>Action</MenuItem>
-								<MenuItem eventKey={3.2}>Another action</MenuItem>
-								<MenuItem eventKey={3.3}>Something else here</MenuItem>
-								<MenuItem divider />
-								<MenuItem eventKey={3.3}>Separated link</MenuItem> */}
-							</NavDropdown>
+							<Link to="/">
+								{" "}
+								<div>Home</div>
+							</Link>
+							<div>LeaderBoard</div>
+							<div>Champ rotation</div>
 						</Nav>
-						<Nav pullRight>
-							<NavItem eventKey={1} href="#">
-								Link Right
-							</NavItem>
-							<NavItem eventKey={2} href="#">
-								Link Right
-							</NavItem>
-						</Nav>
-					</Navbar.Collapse>
-				</Navbar>
-				;
+					</div>
+				</Wrapper>
 			</div>
 		);
 	}
 }
 
 export default NavBar;
+const Wrapper = styled.section`
+	display: flex;
+	margin: auto;
+	width: 100vw;
+	height: 5vh;
+	background-color: #3895d3;
+	border-bottom: 0.25px solid rgb(168, 155, 155);
+`;
+
+const Nav = styled.section`
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+	width: 50vw;
+	color: lightgrey;
+	align-items: center;
+	align-content: center;
+	height: 100%;
+	text-decoration: none;
+`;

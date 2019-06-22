@@ -6,7 +6,10 @@ import NavBar from "./components/NavBar/NavBar";
 function App() {
 	return (
 		<Router>
-			<div className="App">{routes}</div>
+			<div className="App">
+				<NavBar />
+				{routes}
+			</div>
 		</Router>
 	);
 }

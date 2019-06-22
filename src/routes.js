@@ -7,7 +7,7 @@ import MatchHistory from "./components/MatchHistory/MatchHistory";
 import SpecificGame from "./components/SpecificGame/SpecificGame";
 export default (
 	<Switch>
-		<Route component={Search} path="/search" />
+		<Route component={Search}  exact path="/" />
 		<Route component={Account} path="/account/:name" />
 		<Route component={InGame} path="/ingame/:id" />
 		<Route component={MatchHistory} path="/matchHistory/:acountId" />
