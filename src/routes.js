@@ -5,6 +5,7 @@ import Account from "./components/Account/Account";
 import InGame from "./components/InGame/InGame";
 import MatchHistory from "./components/MatchHistory/MatchHistory";
 import SpecificGame from "./components/SpecificGame/SpecificGame";
+import LeaderBoard from "./components/Leaderboard/LeaderBoard"
 export default (
 	<Switch>
 		<Route component={Search}  exact path="/" />
@@ -12,5 +13,6 @@ export default (
 		<Route component={InGame} path="/ingame/:id" />
 		<Route component={MatchHistory} path="/matchHistory/:acountId" />
 		<Route component={SpecificGame} path="/match/:gameId" />
+		<Route component={LeaderBoard} path="/leaderboards" />
 	</Switch>
 );
