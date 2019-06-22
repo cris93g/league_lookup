@@ -1,0 +1,13 @@
+.account {
+	display: flex;
+}
+.accoutb {
+	color: rgb(250, 241, 241);
+	background-color: rgb(88, 200, 238);
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	margin-left: 50px;
+	height: 40px;
+	width: 70px;
+}

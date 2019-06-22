@@ -42,7 +42,7 @@ class Search extends Component {
 					</div>
 				</Wrapper>
 				<CardWrapper>
-					<Cards />
+					<Cards className="overlay" />
 					<Cards />
 					<Cards />
 				</CardWrapper>
@@ -75,7 +75,7 @@ const BottomSide = styled.section`
 
 const CardWrapper = styled.section`
 	width: 100vw;
-	height: 30vh;
+	height: 35vh;
 	display: flex;
 `;
 
