@@ -6,6 +6,7 @@ import "./inGame.css";
 import spells from "../../spells";
 import styled from "styled-components";
 import perks from "../../perks";
+
 class InGame extends Component {
 	constructor(props) {
 		super(props);
@@ -37,8 +38,6 @@ class InGame extends Component {
 
 		let champs = Object.values(champion.data);
 		let spell = Object.values(spells.data);
-		console.log(champs);
-		console.log(game);
 		let group1 = [];
 		let group2 = [];
 
@@ -63,10 +62,7 @@ class InGame extends Component {
 		console.log(group2);
 		return (
 			<div>
-				{/* <Wrapper> */}
-				{/* {game.mapId === 11 ? "Map : Summoners Rift" : ""} */}
 				<div key={group1.summonerName}>
-					<h2>BLUE TEAM</h2>
 					{group1 ? (
 						group1.map(team => (
 							<div key={team.summonerName}>
@@ -118,21 +114,6 @@ class InGame extends Component {
 									}
 								})}
 
-								{/* {perks.slots.map(perk => {
-									if (perk.id == team.perks.perkIds[0]) {
-										return (
-											<div>
-												<img
-													className="iconpic"
-													src={`http://ddragonexplorer.com/cdn/img/${
-														perk.icon
-													}`}
-												/>
-											</div>
-										);
-									}
-								})} */}
-
 								{spell.map(spel => {
 									if (spel.key == team.spell1Id) {
 										return (
@@ -164,7 +145,7 @@ class InGame extends Component {
 					)}
 				</div>
 				<hr />
-				<h2>RED TEAM</h2>
+
 				<div key={group2.summonerName}>
 					{group2 ? (
 						group2.map(team => (
@@ -223,7 +204,6 @@ class InGame extends Component {
 						<h1>Not in a match</h1>
 					)}
 				</div>
-				{/* </Wrapper> */}
 			</div>
 		);
 	}
