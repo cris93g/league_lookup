@@ -81,7 +81,6 @@ class InGame extends Component {
 										team.profileIconId
 									}.png`}
 								/>
-
 								{champs.map(champ => {
 									if (champ.key == team.championId) {
 										return (
@@ -94,7 +93,6 @@ class InGame extends Component {
 										);
 									}
 								})}
-
 								{perks.map(perk => {
 									if (perk.id == team.perks.perkStyle) {
 										return (
@@ -119,6 +117,21 @@ class InGame extends Component {
 										);
 									}
 								})}
+
+								{/* {perks.slots.map(perk => {
+									if (perk.id == team.perks.perkIds[0]) {
+										return (
+											<div>
+												<img
+													className="iconpic"
+													src={`http://ddragonexplorer.com/cdn/img/${
+														perk.icon
+													}`}
+												/>
+											</div>
+										);
+									}
+								})} */}
 
 								{spell.map(spel => {
 									if (spel.key == team.spell1Id) {
