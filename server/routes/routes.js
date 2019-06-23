@@ -8,7 +8,8 @@ const {
 	getSpecificMatch,
 	getChampionMastery,
 	getChampionRotation,
-	getTopOfLeague
+	getTopOfLeague,
+	getAll
 } = require("../controller/leagueAccountApiCtrl");
 
 module.exports = app => {
@@ -22,4 +23,5 @@ module.exports = app => {
 	app.post(`/api/mastery`, getChampionMastery);
 	app.get(`/api/champrotation`, getChampionRotation);
 	app.get(`/api/leaderboards`, getTopOfLeague);
+	app.get(`/api/all`, getAll);
 };

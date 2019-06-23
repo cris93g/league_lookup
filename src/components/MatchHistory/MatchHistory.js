@@ -7,10 +7,10 @@ class MatchHistory extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			history: []
+			history: [],
+			game: []
 			// specific: []
 		};
-		// this.getSpecific = this.getSpecific.bind(this);
 	}
 	componentDidMount() {
 		axios
@@ -21,11 +21,30 @@ class MatchHistory extends Component {
 				this.setState({ history: response.data });
 			});
 	}
+
 	render() {
 		// this.getSpecific();
+		let specific = [];
 		let { matches } = this.state.history;
 		let champs = Object.values(champion.data);
 		console.log(matches);
+		console.log(this.state.game);
+		function parse() {
+			if (matches) {
+				matches.map(match => {
+					axios
+						.post(`/api/match`, {
+							matchId: match.gameId
+						})
+						.then(response => {
+							console.log(response);
+							// specific.push(response.data);
+						});
+				});
+			}
+		}
+		parse();
+		console.log(specific);
 		return (
 			<div className="specific">
 				<Teams>
