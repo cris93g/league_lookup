@@ -1,5 +1,14 @@
 .iconpic {
 	width: 50px;
 	height: 50px;
-	display: flex;
+	/* display: flex; */
+}
+.spellpic {
+	width: 25px;
+	height: 25px;
+}
+.profilepic {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
 }

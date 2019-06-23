@@ -44,14 +44,14 @@ class InGame extends Component {
 		function firstGroup() {
 			if (game.participants) {
 				group1 = game.participants.filter(function(entry) {
-					return entry.teamId == 100;
+					return entry.teamId === 100;
 				});
 			}
 		}
 		function secondGroup() {
 			if (game.participants) {
 				group2 = game.participants.filter(function(entry) {
-					return entry.teamId == 200;
+					return entry.teamId === 200;
 				});
 			}
 		}
@@ -78,7 +78,7 @@ class InGame extends Component {
 									}.png`}
 								/>
 								{champs.map(champ => {
-									if (champ.key == team.championId) {
+									if (champ.key === team.championId) {
 										return (
 											<img
 												className="iconpic"
@@ -90,7 +90,7 @@ class InGame extends Component {
 									}
 								})}
 								{perks.map(perk => {
-									if (perk.id == team.perks.perkStyle) {
+									if (perk.id === team.perks.perkStyle) {
 										return (
 											<img
 												className="iconpic"
@@ -100,7 +100,7 @@ class InGame extends Component {
 									}
 								})}
 								{perks.map(perk => {
-									if (perk.id == team.perks.perkSubStyle) {
+									if (perk.id === team.perks.perkSubStyle) {
 										return (
 											<div>
 												<img
@@ -115,7 +115,7 @@ class InGame extends Component {
 								})}
 
 								{spell.map(spel => {
-									if (spel.key == team.spell1Id) {
+									if (spel.key === team.spell1Id) {
 										return (
 											<img
 												className="iconpic"
@@ -127,7 +127,7 @@ class InGame extends Component {
 									}
 								})}
 								{spell.map(spel => {
-									if (spel.key == team.spell2Id) {
+									if (spel.key === team.spell2Id) {
 										return (
 											<img
 												className="iconpic"
@@ -163,7 +163,7 @@ class InGame extends Component {
 								/>
 
 								{champs.map(champ => {
-									if (champ.key == team.championId) {
+									if (champ.key === team.championId) {
 										return (
 											<img
 												className="iconpic"
@@ -175,7 +175,7 @@ class InGame extends Component {
 									}
 								})}
 								{spell.map(spel => {
-									if (spel.key == team.spell1Id) {
+									if (spel.key === team.spell1Id) {
 										return (
 											<img
 												className="iconpic"
@@ -187,7 +187,7 @@ class InGame extends Component {
 									}
 								})}
 								{spell.map(spel => {
-									if (spel.key == team.spell2Id) {
+									if (spel.key === team.spell2Id) {
 										return (
 											<img
 												className="iconpic"
