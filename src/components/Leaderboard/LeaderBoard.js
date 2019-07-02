@@ -10,7 +10,7 @@ class LeaderBoard extends Component {
   }
   componentDidMount() {
     axios.get(`/api/leaderboards`).then(response => {
-      this.setState({ leaderboards: response.data });
+      this.setState({ leaderboards: response.data.entries });
     });
   }
 
@@ -19,15 +19,16 @@ class LeaderBoard extends Component {
     console.log(leaderboards);
     return (
       <div>
-        {/* {leaderboards
-          ? leaderboards.entries.map(summoner => {
-              return (
-                <div>
-                  <p>{summoner.summonerName}</p>
-                </div>
-              );
-            })
-          : ""} */}
+        {leaderboards
+          ? leaderboards.map(people => (
+              <div>
+                <p>{`name: ${people.summonerName}`}</p>
+                <p>{`rank: ${people.rank}`}</p>
+                <p>{`wins :${people.wins}`}</p>
+                <p>{`losses:${people.losses}`}</p>
+              </div>
+            ))
+          : ""}
       </div>
     );
   }
