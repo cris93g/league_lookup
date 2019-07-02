@@ -17,7 +17,9 @@ class NavBar extends Component {
                 {" "}
                 <div>LeaderBoard</div>
               </Link>
-              <div>Champ rotation</div>
+              <Link to="/rotation">
+                <div>Champ rotation</div>
+              </Link>
             </Nav>
           </div>
         </Wrapper>

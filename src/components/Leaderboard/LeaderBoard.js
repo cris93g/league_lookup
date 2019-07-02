@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 class LeaderBoard extends Component {
   constructor(props) {
@@ -22,7 +23,10 @@ class LeaderBoard extends Component {
         {leaderboards
           ? leaderboards.map(people => (
               <div>
-                <p>{`name: ${people.summonerName}`}</p>
+                <Link to={`/account/${people.summonerName}`}>
+                  {" "}
+                  <p>{`name: ${people.summonerName}`}</p>
+                </Link>
                 <p>{`rank: ${people.rank}`}</p>
                 <p>{`wins :${people.wins}`}</p>
                 <p>{`losses:${people.losses}`}</p>
