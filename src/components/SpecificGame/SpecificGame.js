@@ -3,6 +3,8 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import spells from "../../spells";
 import champion from "../../champion";
+import styled from "styled-components";
+import "./specific.css";
 class SpecificGame extends Component {
 	constructor(props) {
 		super(props);
@@ -34,14 +36,14 @@ class SpecificGame extends Component {
 		function firstGroup() {
 			if (arr3) {
 				group1 = arr3.filter(function(entry) {
-					return entry.teamId == 100;
+					return entry.teamId === 100;
 				});
 			}
 		}
 		function secondGroup() {
 			if (arr3) {
 				group2 = arr3.filter(function(entry) {
-					return entry.teamId == 200;
+					return entry.teamId === 200;
 				});
 			}
 		}
@@ -81,159 +83,165 @@ class SpecificGame extends Component {
 		console.log(groupOne);
 		console.log(groupTwo);
 		return (
-			<div>
-				<div>
-					{groupOne
-						? groupOne.map(team => (
-								<div>
-									<Link to={`/account/${team.player.summonerName}`}>
-									<p>{team.player.summonerName}</p></Link>
-									<img
-										className="iconpic"
-										src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/profileicon/${
-											team.player.profileIcon
-										}.png`}
-									/>
-									{champs.map(champ => {
-										if (champ.key == team.championId) {
-											return (
-												<img
-													className="iconpic"
-													src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
-														champ.id
-													}.png`}
-												/>
-											);
-										}
-									})}
-									{spell.map(spel => {
-										if (spel.key == team.spell1Id) {
-											return (
-												<img
-													className="iconpic"
-													src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
-														spel.id
-													}.png`}
-												/>
-											);
-										}
-									})}
-									{spell.map(spel => {
-										if (spel.key == team.spell2Id) {
-											return (
-												<img
-													className="iconpic"
-													src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
-														spel.id
-													}.png`}
-												/>
-											);
-										}
-									})}
+			<div className="specific">
+				<Teams>
+					<BlueTeam>
+						<div>
+							<PlayerWrapper>
+								{groupOne
+									? groupOne.map(team => (
+											<div className="content">
+												{champs.map(champ => {
+													if (champ.key == team.championId) {
+														return (
+															<img
+																className="profilepic"
+																src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
+																	champ.id
+																}.png`}
+															/>
+														);
+													}
+												})}
+												{spell.map(spel => {
+													if (spel.key == team.spell1Id) {
+														return (
+															<img
+																className="spellpic"
+																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																	spel.id
+																}.png`}
+															/>
+														);
+													}
+												})}
+												{spell.map(spel => {
+													if (spel.key == team.spell2Id) {
+														return (
+															<img
+																className="spellpic"
+																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																	spel.id
+																}.png`}
+															/>
+														);
+													}
+												})}
+												<Info>
+													<Link to={`/account/${team.player.summonerName}`}>
+														<p>{team.player.summonerName}</p>
+													</Link>
+													<p>{`KDA:${team.stats.kills}/${team.stats.deaths}/${
+														team.stats.assists
+													}`}</p>
+													<p>{`cs:${team.stats.totalMinionsKilled}`}</p>
+													<p>{`lv:${team.stats.champLevel}`}</p>
+												</Info>
+												<p>{team.stats.win == true ? "WIN" : "LOOSE"}</p>
+												<hr />
+											</div>
+									  ))
+									: ""}
+							</PlayerWrapper>
+						</div>
+					</BlueTeam>
+					<hr />
+					<RedTeam>
+						<div>
+							<PlayerWrapper>
+								{groupOne
+									? groupTwo.map(team => (
+											<div className="content">
+												{champs.map(champ => {
+													if (champ.key == team.championId) {
+														return (
+															<img
+																className="profilepic"
+																src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
+																	champ.id
+																}.png`}
+															/>
+														);
+													}
+												})}
+												{spell.map(spel => {
+													if (spel.key == team.spell1Id) {
+														return (
+															<img
+																className="spellpic"
+																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																	spel.id
+																}.png`}
+															/>
+														);
+													}
+												})}
+												{spell.map(spel => {
+													if (spel.key == team.spell2Id) {
+														return (
+															<img
+																className="spellpic"
+																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																	spel.id
+																}.png`}
+															/>
+														);
+													}
+												})}
+												<Info>
+													<Link to={`/account/${team.player.summonerName}`}>
+														<p>{team.player.summonerName}</p>
+													</Link>
 
-									<p>{`assist :${team.stats.assists}`}</p>
-									<p>{`champ level :${team.stats.champLevel}`}</p>
-									<p>{`damage dealt to obj :${
-										team.stats.damageDealtToObjectives
-									}`}</p>
-									<p>{`damage dealt to turrents :${
-										team.stats.damageDealtToTurrets
-									}`}</p>
-									<p>{`damage self mitigated :${
-										team.stats.damageSelfMitigated
-									}`}</p>
-									<p>{`deaths :${team.stats.deaths}`}</p>
-									<p>{`double kills :${team.stats.doubleKills}`}</p>
-									<p>{`first blood assist :${team.stats.firstBloodAssist}`}</p>
-									<p>{`first blood kills :${team.stats.firstBloodKill}`}</p>
-									<p>{`first inhibitor kill :${
-										team.stats.firstInhibitorKill
-									}`}</p>
-									<p>{`first tower kills :${team.stats.firstTowerKill}`}</p>
-									<p>{`gold earned :${team.stats.goldEarned}`}</p>
-									<p>{`gold spent :${team.stats.goldSpent}`}</p>
-									<p>{`inhibitor kills :${team.stats.inhibitorKills}`}</p>
-								</div>
-						  ))
-						: ""}
-				</div>
-				<hr />
-				<div>
-					{groupOne
-						? groupTwo.map(team => (
-								<div>
-									<Link to={`/account/${team.player.summonerName}`}>
-									<p>{team.player.summonerName}</p></Link>
-									<img
-										className="iconpic"
-										src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/profileicon/${
-											team.player.profileIcon
-										}.png`}
-									/>
-									{champs.map(champ => {
-										if (champ.key == team.championId) {
-											return (
-												<img
-													className="iconpic"
-													src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
-														champ.id
-													}.png`}
-												/>
-											);
-										}
-									})}
-									{spell.map(spel => {
-										if (spel.key == team.spell1Id) {
-											return (
-												<img
-													className="iconpic"
-													src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
-														spel.id
-													}.png`}
-												/>
-											);
-										}
-									})}
-									{spell.map(spel => {
-										if (spel.key == team.spell2Id) {
-											return (
-												<img
-													className="iconpic"
-													src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
-														spel.id
-													}.png`}
-												/>
-											);
-										}
-									})}
-									<p>{`assist :${team.stats.assists}`}</p>
-									<p>{`champ level :${team.stats.champLevel}`}</p>
-									<p>{`damage dealt to obj :${
-										team.stats.damageDealtToObjectives
-									}`}</p>
-									<p>{`damage dealt to turrents :${
-										team.stats.damageDealtToTurrets
-									}`}</p>
-									<p>{`damage self mitigated :${
-										team.stats.damageSelfMitigated
-									}`}</p>
-									<p>{`deaths :${team.stats.deaths}`}</p>
-									<p>{`double kills :${team.stats.doubleKills}`}</p>
-									<p>{`first blood assist :${team.stats.firstBloodAssist}`}</p>
-									<p>{`first blood kills :${team.stats.firstBloodKill}`}</p>
-									<p>{`first inhibitor kill :${
-										team.stats.firstInhibitorKill
-									}`}</p>
-									<p>{`first tower kills :${team.stats.firstTowerKill}`}</p>
-									<p>{`gold earned :${team.stats.goldEarned}`}</p>
-									<p>{`gold spent :${team.stats.goldSpent}`}</p>
-									<p>{`inhibitor kills :${team.stats.inhibitorKills}`}</p>
-								</div>
-						  ))
-						: ""}
-				</div>
+													<p>{`KDA:${team.stats.kills}/${team.stats.deaths}/${
+														team.stats.assists
+													}`}</p>
+													<p>{`cs:${team.stats.totalMinionsKilled}`}</p>
+													<p>{`lv:${team.stats.champLevel}`}</p>
+												</Info>
+												<p>{team.stats.win == true ? "WIN" : "LOOSE"}</p>
+												<hr />
+											</div>
+									  ))
+									: ""}
+							</PlayerWrapper>
+						</div>
+					</RedTeam>
+				</Teams>
 			</div>
 		);
 	}
 }
 export default SpecificGame;
+const Teams = styled.section`
+	display: flex;
+	margin: auto;
+	width: 80vw;
+	height: 60vh;
+	/* margin-top: 10px; */
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+	align-items: center;
+	align-content: center;
+`;
+
+const BlueTeam = styled.section`
+	height: 100%;
+	width: 50%;
+	background-color: #3895d3;
+`;
+const RedTeam = styled.section`
+	height: 100%;
+	width: 50%;
+	border-left: 1px solid black;
+	background-color: red;
+`;
+
+const PlayerWrapper = styled.div`
+	height: 30%;
+	width: 100%;
+`;
+const Info = styled.div`
+	display: flex;
+	justify-content: space-around;
+`;
