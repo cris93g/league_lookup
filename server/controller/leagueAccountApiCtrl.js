@@ -70,7 +70,17 @@ let getAll = async (req, res) => {
 		`https://na1.api.riotgames.com/lol/match/v4/matchlists/by-account/mqTho7oMTYtM70XO0Rb6uvTRvIL-zf9-IKcN75BWck9MS1k?api_key=RGAPI-7ff92558-f751-4af6-8a0f-d805c684d778&endIndex=3`
 	);
 	const info = results.data;
-	console.log(info);
+	let all = [];
+
+	if (info) {
+		info.matches.map(match => {
+			axios.post(
+				`https://na1.api.riotgames.com/lol/match/v4/matches/${
+					match.gameId
+				}?api_key=RGAPI-7ff92558-f751-4af6-8a0f-d805c684d778`
+			);
+		});
+	}
 };
 
 let getSpecificMatch = async (req, res) => {
