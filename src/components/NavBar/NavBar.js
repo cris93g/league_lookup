@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./NavBar.css";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Status from "../Status/Status";
 class NavBar extends Component {
   render() {
     return (
@@ -20,9 +21,12 @@ class NavBar extends Component {
               <Link to="/rotation">
                 <div>Champ rotation</div>
               </Link>
-              {/* <Link to="/status">
-                <div>League Status</div>
-              </Link> */}
+
+              <div>League Status</div>
+
+              <div>
+                <Status />
+              </div>
             </Nav>
           </div>
         </Wrapper>

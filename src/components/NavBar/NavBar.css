@@ -1,7 +1,22 @@
 a {
-	text-decoration: none;
-	color: lightgrey;
+  text-decoration: none;
+  color: lightgrey;
 }
 a:hover {
-	color: rgb(168, 155, 155);
+  color: rgb(168, 155, 155);
+}
+
+/* .stat {
+  margin-left: -100px;
+} */
+#root
+  > div
+  > div:nth-child(1)
+  > section
+  > div
+  > section
+  > div:nth-child(5)
+  > div
+  > div {
+  margin-left: -80px;
 }
