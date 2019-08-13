@@ -8,6 +8,7 @@ import SpecificGame from "./components/SpecificGame/SpecificGame";
 import LeaderBoard from "./components/Leaderboard/LeaderBoard";
 import ChampRotation from "./components/ChampRotation/ChampRotation";
 export default (
+<<<<<<< HEAD
 	<Switch>
 		<Route component={Search} exact path="/" />
 		<Route component={Account} path="/account/:name" />
@@ -17,4 +18,15 @@ export default (
 		<Route component={LeaderBoard} path="/leaderboards" />
 		<Route component={ChampRotation} path="/rotation" />
 	</Switch>
+=======
+  <Switch>
+    <Route component={Search} exact path="/" />
+    <Route component={Account} path="/account/:name" />
+    <Route component={InGame} path="/ingame/:id" />
+    <Route component={MatchHistory} path="/matchHistory/:acountId" />
+    <Route component={SpecificGame} path="/match/:gameId" />
+    <Route component={ChampRotation} path="/rotation" />
+    <Route component={LeaderBoard} path="/leaderboards" />
+  </Switch>
+>>>>>>> 971b5001b63741580fb7d41755be9cb8d80a88c5
 );
