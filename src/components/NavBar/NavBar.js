@@ -3,7 +3,6 @@ import "./NavBar.css";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 class NavBar extends Component {
-<<<<<<< HEAD
 	render() {
 		return (
 			<div>
@@ -27,31 +26,6 @@ class NavBar extends Component {
 			</div>
 		);
 	}
-=======
-  render() {
-    return (
-      <div>
-        <Wrapper>
-          <div>
-            <Nav>
-              <Link to="/">
-                {" "}
-                <div>Home</div>
-              </Link>
-              <Link to="/leaderboards">
-                {" "}
-                <div>LeaderBoard</div>
-              </Link>
-              <Link to="/rotation">
-                <div>Champ rotation</div>
-              </Link>
-            </Nav>
-          </div>
-        </Wrapper>
-      </div>
-    );
-  }
->>>>>>> 971b5001b63741580fb7d41755be9cb8d80a88c5
 }
 
 export default NavBar;
