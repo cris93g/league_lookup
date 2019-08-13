@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Search.css";
 import styled from "styled-components";
 import Banner from "./BANNER.jpg";
+import history from "./history.PNG";
 class Search extends Component {
 	constructor(props) {
 		super(props);
@@ -42,9 +43,15 @@ class Search extends Component {
 					</div>
 				</Wrapper>
 				<CardWrapper>
-					<Cards className="overlay" />
-					<Cards />
-					<Cards />
+					<Cards className="overlay">
+						<img className="secondPic" src={require("./ranks.PNG")} />
+					</Cards>
+					<Cards>
+						<img className="firstPic" src={require("./history.PNG")} />
+					</Cards>
+					<Cards>
+						<img className="thirdPic" src={require("./ROTATION.PNG")} />
+					</Cards>
 				</CardWrapper>
 			</div>
 		);
@@ -80,8 +87,8 @@ const CardWrapper = styled.section`
 `;
 
 const Cards = styled.section`
-	width: 300px;
-	height: 250px;
+	width: 500px;
+	height: 185px;
 	border: 0.5px solid black;
 	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); */
 	border-radius: 8px;

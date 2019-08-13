@@ -25,3 +25,35 @@ input {
 	border: none;
 	outline: none;
 }
+
+.firstPic {
+	/* max-width: 100%; */
+	width: 100%;
+	/* height: 100%; */
+	border-radius: 8px;
+	background-position: center; /* Center the image */
+	/* background-repeat: no-repeat; Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.secondPic {
+	max-width: 58%;
+	margin-left: 100px;
+	/* width: 100%; */
+	/* height: 100%; */
+	border-radius: 8px;
+	background-position: center; /* Center the image */
+	/* background-repeat: no-repeat; Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.thirdPic {
+	max-width: 95%;
+	margin-left: 1px;
+	/* width: 100%; */
+	/* height: 100%; */
+	border-radius: 8px;
+	background-position: center; /* Center the image */
+	/* background-repeat: no-repeat; Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}

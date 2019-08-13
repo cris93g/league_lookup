@@ -62,180 +62,185 @@ class InGame extends Component {
 		console.log(group2);
 
 		return (
-			<div className="specific">
-				<Teams>
-					<BlueTeam>
-						<div key={group1.summonerName}>
-							<PlayerWrapper>
-								{group1 ? (
-									group1.map(team => (
-										<div className="content" key={team.summonerName}>
-											{champs.map(champ => {
-												if (champ.key == team.championId) {
-													return (
-														<img
-															className="profilepic"
-															src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
-																champ.id
-															}.png`}
-														/>
-													);
-												}
-											})}
-											{spell.map(spel => {
-												if (spel.key == team.spell1Id) {
-													return (
-														<img
-															className="spellpic"
-															src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
-																spel.id
-															}.png`}
-														/>
-													);
-												}
-											})}
-											{spell.map(spel => {
-												if (spel.key == team.spell2Id) {
-													return (
-														<img
-															className="spellpic"
-															src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
-																spel.id
-															}.png`}
-														/>
-													);
-												}
-											})}
-											<div>
-												{perks.map(perk => {
-													if (perk.id == team.perks.perkStyle) {
+			<div>
+				<h1 className="pageTitle">
+					{group1.length != 0 ? "In Game" : "Not In Game"}
+				</h1>
+				<div className="specific">
+					<Teams>
+						<BlueTeam>
+							<div key={group1.summonerName}>
+								<PlayerWrapper>
+									{group1 ? (
+										group1.map(team => (
+											<div className="content" key={team.summonerName}>
+												{champs.map(champ => {
+													if (champ.key == team.championId) {
 														return (
 															<img
-																className="perkpic"
-																src={`http://ddragonexplorer.com/cdn/img/${
-																	perk.icon
-																}`}
+																className="profilepic"
+																src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
+																	champ.id
+																}.png`}
 															/>
 														);
 													}
 												})}
-												<br />
-												{perks.map(perk => {
-													if (perk.id === team.perks.perkSubStyle) {
+												{spell.map(spel => {
+													if (spel.key == team.spell1Id) {
 														return (
-															<div>
+															<img
+																className="spellpic"
+																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																	spel.id
+																}.png`}
+															/>
+														);
+													}
+												})}
+												{spell.map(spel => {
+													if (spel.key == team.spell2Id) {
+														return (
+															<img
+																className="spellpic"
+																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																	spel.id
+																}.png`}
+															/>
+														);
+													}
+												})}
+												<div>
+													{perks.map(perk => {
+														if (perk.id == team.perks.perkStyle) {
+															return (
 																<img
 																	className="perkpic"
 																	src={`http://ddragonexplorer.com/cdn/img/${
 																		perk.icon
 																	}`}
 																/>
-															</div>
-														);
-													}
-												})}
+															);
+														}
+													})}
+													<br />
+													{perks.map(perk => {
+														if (perk.id == team.perks.perkSubStyle) {
+															return (
+																<div>
+																	<img
+																		className="perkpic"
+																		src={`http://ddragonexplorer.com/cdn/img/${
+																			perk.icon
+																		}`}
+																	/>
+																</div>
+															);
+														}
+													})}
+												</div>
+												{
+													<Link to={`/account/${team.summonerName}`}>
+														<p>{`${team.summonerName}`}</p>
+													</Link>
+												}
+												<hr />
 											</div>
-											{
-												<Link to={`/account/${team.summonerName}`}>
-													<p>{`${team.summonerName}`}</p>
-												</Link>
-											}
-											<hr />
-										</div>
-									))
-								) : (
-									<h1>Not in a match</h1>
-								)}
-							</PlayerWrapper>
-						</div>
-					</BlueTeam>
-					<hr />
-					<RedTeam>
-						<div key={group2.summonerName}>
-							<PlayerWrapper>
-								{group2 ? (
-									group2.map(team => (
-										<div className="content" key={team.summonerName}>
-											{champs.map(champ => {
-												if (champ.key == team.championId) {
-													return (
-														<img
-															className="profilepic"
-															src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
-																champ.id
-															}.png`}
-														/>
-													);
-												}
-											})}
-											{spell.map(spel => {
-												if (spel.key == team.spell1Id) {
-													return (
-														<img
-															className="spellpic"
-															src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
-																spel.id
-															}.png`}
-														/>
-													);
-												}
-											})}
-											{spell.map(spel => {
-												if (spel.key == team.spell2Id) {
-													return (
-														<img
-															className="spellpic"
-															src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
-																spel.id
-															}.png`}
-														/>
-													);
-												}
-											})}
-											<div>
-												{perks.map(perk => {
-													if (perk.id == team.perks.perkStyle) {
+										))
+									) : (
+										<h1>Not in a match</h1>
+									)}
+								</PlayerWrapper>
+							</div>
+						</BlueTeam>
+						<hr />
+						<RedTeam>
+							<div key={group2.summonerName}>
+								<PlayerWrapper>
+									{group2 ? (
+										group2.map(team => (
+											<div className="content" key={team.summonerName}>
+												{champs.map(champ => {
+													if (champ.key == team.championId) {
 														return (
 															<img
-																className="perkpic"
-																src={`http://ddragonexplorer.com/cdn/img/${
-																	perk.icon
-																}`}
+																className="profilepic"
+																src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/champion/${
+																	champ.id
+																}.png`}
 															/>
 														);
 													}
 												})}
-												<br />
-												{perks.map(perk => {
-													if (perk.id === team.perks.perkSubStyle) {
+												{spell.map(spel => {
+													if (spel.key == team.spell1Id) {
 														return (
-															<div>
+															<img
+																className="spellpic"
+																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																	spel.id
+																}.png`}
+															/>
+														);
+													}
+												})}
+												{spell.map(spel => {
+													if (spel.key == team.spell2Id) {
+														return (
+															<img
+																className="spellpic"
+																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																	spel.id
+																}.png`}
+															/>
+														);
+													}
+												})}
+												<div>
+													{perks.map(perk => {
+														if (perk.id == team.perks.perkStyle) {
+															return (
 																<img
 																	className="perkpic"
 																	src={`http://ddragonexplorer.com/cdn/img/${
 																		perk.icon
 																	}`}
 																/>
-															</div>
-														);
-													}
-												})}
+															);
+														}
+													})}
+													<br />
+													{perks.map(perk => {
+														if (perk.id === team.perks.perkSubStyle) {
+															return (
+																<div>
+																	<img
+																		className="perkpic"
+																		src={`http://ddragonexplorer.com/cdn/img/${
+																			perk.icon
+																		}`}
+																	/>
+																</div>
+															);
+														}
+													})}
+												</div>
+												{
+													<Link to={`/account/${team.summonerName}`}>
+														<p>{`${team.summonerName}`}</p>
+													</Link>
+												}
+												<hr />
 											</div>
-											{
-												<Link to={`/account/${team.summonerName}`}>
-													<p>{`${team.summonerName}`}</p>
-												</Link>
-											}
-											<hr />
-										</div>
-									))
-								) : (
-									<h1>Not in a match</h1>
-								)}
-							</PlayerWrapper>
-						</div>
-					</RedTeam>
-				</Teams>
+										))
+									) : (
+										<h1>Not in a match</h1>
+									)}
+								</PlayerWrapper>
+							</div>
+						</RedTeam>
+					</Teams>
+				</div>
 			</div>
 		);
 	}

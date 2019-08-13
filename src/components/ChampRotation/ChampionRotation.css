@@ -1,0 +1,27 @@
+.rot {
+	margin-left: 10px;
+	/* max-width: 100%; */
+	/* width: 120%; */
+	margin-top: 2px;
+}
+/* .rotationContainer {
+	display: flex;
+	width: 80vw;
+	height: 40vh;
+	margin-top: 2vh;
+	flex-wrap: wrap;
+} */
+.master {
+	margin: auto;
+	align-items: center;
+}
+.rotationHeaders {
+	font-size: 2em;
+	margin-left: 40%;
+	padding-bottom: 10px;
+}
+.rotationHeaders2 {
+	font-size: 2em;
+	margin-left: 35%;
+	padding-bottom: 10px;
+}

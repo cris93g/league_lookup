@@ -16,3 +16,13 @@
 	width: 20px;
 	height: 20px;
 }
+
+.pageTitle {
+	display: flex;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 5em;
+	margin: auto;
+	text-align: center;
+	margin-left: 40%;
+	/* margin-top: 3%; */
+}
