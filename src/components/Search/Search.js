@@ -36,7 +36,7 @@ class Search extends Component {
 									onChange={e => this.onNameHandler(e)}
 								/>
 								<Link to={`/account/${name}`}>
-									<button className="inp">.GG</button>
+									<button className="inp">Search</button>
 								</Link>
 							</div>
 						</BottomSide>
