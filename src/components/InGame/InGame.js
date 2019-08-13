@@ -91,7 +91,7 @@ class InGame extends Component {
 														return (
 															<img
 																className="spellpic"
-																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/spell/${
 																	spel.id
 																}.png`}
 															/>
@@ -103,7 +103,7 @@ class InGame extends Component {
 														return (
 															<img
 																className="spellpic"
-																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/spell/${
 																	spel.id
 																}.png`}
 															/>
@@ -116,7 +116,7 @@ class InGame extends Component {
 															return (
 																<img
 																	className="perkpic"
-																	src={`http://ddragonexplorer.com/cdn/img/${
+																	src={`https://ddragon.leagueoflegends.com/cdn/img/${
 																		perk.icon
 																	}`}
 																/>
@@ -130,7 +130,7 @@ class InGame extends Component {
 																<div>
 																	<img
 																		className="perkpic"
-																		src={`http://ddragonexplorer.com/cdn/img/${
+																		src={`https://ddragon.leagueoflegends.com/cdn/img/${
 																			perk.icon
 																		}`}
 																	/>
@@ -177,7 +177,7 @@ class InGame extends Component {
 														return (
 															<img
 																className="spellpic"
-																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/spell/${
 																	spel.id
 																}.png`}
 															/>
@@ -189,7 +189,7 @@ class InGame extends Component {
 														return (
 															<img
 																className="spellpic"
-																src={`http://ddragon.leagueoflegends.com/cdn/6.24.1/img/spell/${
+																src={`http://ddragon.leagueoflegends.com/cdn/9.12.1/img/spell/${
 																	spel.id
 																}.png`}
 															/>
@@ -202,7 +202,7 @@ class InGame extends Component {
 															return (
 																<img
 																	className="perkpic"
-																	src={`http://ddragonexplorer.com/cdn/img/${
+																	src={`https://ddragon.leagueoflegends.com/cdn/img/${
 																		perk.icon
 																	}`}
 																/>
@@ -216,7 +216,7 @@ class InGame extends Component {
 																<div>
 																	<img
 																		className="perkpic"
-																		src={`http://ddragonexplorer.com/cdn/img/${
+																		src={`https://ddragon.leagueoflegends.com/cdn/img/${
 																			perk.icon
 																		}`}
 																	/>
@@ -224,6 +224,21 @@ class InGame extends Component {
 															);
 														}
 													})}
+												</div>
+												<div>
+													{/* {perks.slots.runes.map(sub => {
+														if (sub.id === team.perks.perkIds) {
+															return (
+																<div>
+																	<img
+																		src={`https://ddragon.leagueoflegends.com/cdn/img/${
+																			sub.icon
+																		}`}
+																	/>
+																</div>
+															);
+														}
+													})} */}
 												</div>
 												{
 													<Link to={`/account/${team.summonerName}`}>
