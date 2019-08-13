@@ -7,14 +7,16 @@ import MatchHistory from "./components/MatchHistory/MatchHistory";
 import SpecificGame from "./components/SpecificGame/SpecificGame";
 import LeaderBoard from "./components/Leaderboard/LeaderBoard";
 import ChampRotation from "./components/ChampRotation/ChampRotation";
+import Status from "./components/Status/Status";
 export default (
-	<Switch>
-		<Route component={Search} exact path="/" />
-		<Route component={Account} path="/account/:name" />
-		<Route component={InGame} path="/ingame/:id" />
-		<Route component={MatchHistory} path="/matchHistory/:acountId" />
-		<Route component={SpecificGame} path="/match/:gameId" />
-		<Route component={LeaderBoard} path="/leaderboards" />
-		<Route component={ChampRotation} path="/rotation" />
-	</Switch>
+  <Switch>
+    <Route component={Search} exact path="/" />
+    <Route component={Account} path="/account/:name" />
+    <Route component={InGame} path="/ingame/:id" />
+    <Route component={MatchHistory} path="/matchHistory/:acountId" />
+    <Route component={SpecificGame} path="/match/:gameId" />
+    <Route component={LeaderBoard} path="/leaderboards" />
+    <Route component={ChampRotation} path="/rotation" />
+    <Route component={Status} path="/status" />
+  </Switch>
 );
